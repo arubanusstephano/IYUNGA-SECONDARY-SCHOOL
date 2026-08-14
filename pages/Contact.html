@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!--
+        This tells the browser that we are
+        using UTF-8 character encoding.
+    -->
+    <meta charset="UTF-8">
+
+
+    <!--
+        This makes the website responsive.
+
+        It allows the page to adjust properly
+        on computers, tablets and phones.
+    -->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+
+    <!--
+        This is the title shown
+        on the browser tab.
+    -->
+    <title>Contact - IYUNGA Secondary School</title>
+
+
+    <!--
+        Connect this page to our CSS file.
+
+        ../ means:
+        "Go back one folder."
+
+        Contact.html is inside the pages folder,
+        while style.css is in the main project folder.
+    -->
+    <link rel="stylesheet" href="../style.css">
+
+
+    <!--
+        Add the school logo to the browser tab.
+    -->
+    <link rel="icon"
+          type="image/png"
+          href="../images/school-logo.png">
+
+</head>
+
+
+<body>
+
+
+    <!-- =================================================
+         NAVIGATION BAR
+    ================================================== -->
+
+    <nav class="navbar">
+
+
+        <!--
+            This contains the school logo
+            and school name.
+        -->
+
+        <div class="school-brand">
+
+
+            <!-- SCHOOL LOGO -->
+
+            <img
+                src="../images/school-logo.png"
+                alt="IYUNGA Secondary School Logo"
+                class="school-logo"
+            >
+
+
+            <!-- SCHOOL NAME -->
+
+            <div class="school-name">
+
+                <h1>IYUNGA SECONDARY SCHOOL</h1>
+
+            </div>
+
+        </div>
+
+
+
+        <!--
+            Navigation links allow visitors
+            to move between the website pages.
+        -->
+
+        <div class="nav-links">
+
+            <!-- Home page -->
+            <a href="../index.html">Home</a>
+
+            <!-- About page -->
+            <a href="About.html">About</a>
+
+            <!-- Academics page -->
+            <a href="Academics.html">Academics</a>
+
+            <!-- Admission page -->
+            <a href="Admission.html">Admission</a>
+
+            <!-- Teachers page -->
+            <a href="Teachers.html">Teachers</a>
+
+            <!-- Current page -->
+            <a href="Contact.html">Contact</a>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- =================================================
+         MAIN CONTENT
+    ================================================== -->
+
+    <main>
+
+
+        <!-- =================================================
+             CONTACT INTRODUCTION
+        ================================================== -->
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+
+                <!-- Main heading -->
+
+                <h2>Contact IYUNGA Secondary School</h2>
+
+
+                <!-- Introduction -->
+
+                <p>
+
+                    We are happy to receive your questions,
+                    suggestions and requests for information.
+
+                    Please use the contact information below
+                    or send us a message through the form.
+
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             CONTACT INFORMATION
+        ================================================== -->
+
+        <section class="section">
+
+
+            <h2>Contact Information</h2>
+
+
+            <!--
+                We use cards to display
+                different contact information.
+            -->
+
+            <div class="cards">
+
+
+                <!-- ADDRESS CARD -->
+
+                <div class="card">
+
+                    <h3>School Address</h3>
+
+                    <p>
+
+                        IYUNGA Secondary School
+
+                        <br>
+
+                        IYUNGA, Tanzania
+
+                    </p>
+
+                </div>
+
+
+
+                <!-- PHONE CARD -->
+
+                <div class="card">
+
+                    <h3>Phone</h3>
+
+                    <p>
+
+                        +255 675 789 543
+
+                    </p>
+
+                    <!--
+                        Replace the blank space
+                        with the official school
+                        telephone number.
+                    -->
+
+                </div>
+
+
+
+                <!-- EMAIL CARD -->
+
+                <div class="card">
+
+                    <h3>Email</h3>
+
+                    <p>
+
+                        iyunga@gmail.com
+
+                    </p>
+
+                    <!--
+                        Replace this with the
+                        school's official email.
+                    -->
+
+                </div>
+
+
+
+                <!-- OFFICE CARD -->
+
+                <div class="card">
+
+                    <h3>School Office</h3>
+
+                    <p>
+
+                        For general enquiries,
+                        admission information and
+                        other school matters,
+                        please contact the school office.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             CONTACT FORM
+        ================================================== -->
+
+        <section class="section">
+
+
+            <h2>Send Us a Message</h2>
+
+
+            <p>
+
+                Fill in the form below to send
+                your message.
+
+            </p>
+
+
+
+            <!--
+                The form contains input fields
+                where the visitor can enter information.
+
+                id="contactForm" allows JavaScript
+                to identify this form later.
+            -->
+
+            <form id="contactForm">
+
+
+                <!-- =========================================
+                     NAME FIELD
+                ========================================== -->
+
+                <div class="form-group">
+
+
+                    <!--
+                        Label tells the visitor
+                        what information to enter.
+                    -->
+
+                    <label for="name">
+                        Full Name
+                    </label>
+
+
+                    <!--
+                        Text input for the visitor's name.
+                    -->
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your full name"
+                        required
+                    >
+
+                </div>
+
+
+
+                <!-- =========================================
+                     EMAIL FIELD
+                ========================================== -->
+
+                <div class="form-group">
+
+
+                    <label for="email">
+                        Email Address
+                    </label>
+
+
+                    <!--
+                        type="email" tells the browser
+                        that the visitor should enter
+                        an email address.
+                    -->
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required
+                    >
+
+                </div>
+
+
+
+                <!-- =========================================
+                     SUBJECT FIELD
+                ========================================== -->
+
+                <div class="form-group">
+
+
+                    <label for="subject">
+                        Subject
+                    </label>
+
+
+                    <input
+                        type="text"
+                        id="subject"
+                        name="subject"
+                        placeholder="Enter message subject"
+                        required
+                    >
+
+                </div>
+
+
+
+                <!-- =========================================
+                     MESSAGE FIELD
+                ========================================== -->
+
+                <div class="form-group">
+
+
+                    <label for="message">
+                        Message
+                    </label>
+
+
+                    <!--
+                        textarea is used when the visitor
+                        needs to enter several lines of text.
+                    -->
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="6"
+                        placeholder="Write your message here..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+
+                <!-- =========================================
+                     SUBMIT BUTTON
+                ========================================== -->
+
+                <button
+                    type="submit"
+                    class="hero-button"
+                >
+
+                    Send Message
+
+                </button>
+
+
+            </form>
+
+
+            <!--
+                JavaScript can use this paragraph
+                to display a message after the
+                visitor submits the form.
+            -->
+
+            <p id="formMessage"></p>
+
+
+        </section>
+
+
+
+        <!-- =================================================
+             OFFICE HOURS
+        ================================================== -->
+
+        <section class="section">
+
+
+            <h2>Office Hours</h2>
+
+
+            <div class="card">
+
+
+                <p>
+
+                    <strong>Monday - Friday:</strong>
+                    8:00am - 3:30pm
+
+                </p>
+
+
+                <p>
+
+                    <strong>Saturday:</strong>
+                    8:00am - 12:30pm
+
+                </p>
+
+
+                <p>
+
+                    <strong>Sunday:</strong>
+                    Closed 
+
+                </p>
+
+
+                <!--
+                    Update these details using
+                    the school's official office hours.
+                -->
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             LOCATION
+        ================================================== -->
+
+        <section class="section">
+
+
+            <h2>Our Location</h2>
+
+
+            <p>
+
+                IYUNGA Secondary School is located
+                in IYUNGA, Tanzania.
+
+            </p>
+
+
+            <!--
+                Later we can add an interactive
+                Google Map or another map here.
+
+                We will learn how to do that
+                separately.
+            -->
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =================================================
+         FOOTER
+    ================================================== -->
+
+    <footer>
+
+        <p>
+
+            &copy; 2026 IYUNGA SECONDARY SCHOOL.
+            All Rights Reserved.
+
+        </p>
+
+    </footer>
+
+
+
+    <!--
+        Connect this page to JavaScript.
+
+        Since Contact.html is inside the pages folder,
+        ../ takes us back to the main project folder.
+    -->
+
+    <script src="../script.js"></script>
+
+
+</body>
+
+</html>

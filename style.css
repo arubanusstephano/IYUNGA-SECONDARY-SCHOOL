@@ -1,0 +1,1215 @@
+/* =====================================================
+   1. GENERAL SETTINGS
+===================================================== */
+
+/*
+   * means ALL HTML elements.
+
+   margin: 0;
+   → Removes automatic outside space.
+
+   padding: 0;
+   → Removes automatic inside space.
+
+   box-sizing: border-box;
+   → Makes sizing easier to control.
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =====================================================
+   2. BODY
+===================================================== */
+
+/*
+   Controls the general appearance
+   of the whole webpage.
+*/
+
+body {
+    font-family: Arial, sans-serif;
+
+    background-color: lawngreen;
+
+    color: lightseagreen;
+
+    line-height: 1.6;
+}
+
+
+/* =====================================================
+   3. NAVIGATION BAR
+===================================================== */
+
+/*
+   display: flex;
+   → Turns Flexbox ON.
+
+   flex-direction: row;
+   → Places school name and links horizontally.
+
+   justify-content: space-between;
+   → Pushes the school name and links apart.
+
+   align-items: center;
+   → Centers them vertically.
+
+   flex-wrap: wrap;
+   → Allows items to move to another line
+      when the screen is small.
+*/
+
+.navbar {
+    background-color: khaki;
+
+    padding: 20px 50px;
+
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 20px;
+}
+
+
+/* =====================================================
+   4. SCHOOL NAME
+===================================================== */
+
+.school-name {
+    display: flex;
+
+    align-items: center;
+
+    flex-shrink: 0;
+}
+
+
+.school-name h1 {
+    margin-bottom: 20px;
+
+    color: navy;
+
+    font-size: 40px;
+}
+
+
+/* =====================================================
+   5. NAVIGATION LINKS
+===================================================== */
+
+.nav-links {
+    display: flex;
+
+    flex-direction: row;
+
+    gap: 25px;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+}
+
+
+/* Navigation <a> links */
+
+.nav-links a {
+    color: red;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    padding: 5px;
+
+    transition: 0.3s;
+}
+
+
+/* Change colour when mouse is over link */
+
+.nav-links a:hover {
+    color: indigo;
+
+    transform: translateY(-2px);
+}
+
+
+/* =====================================================
+   6. HERO SECTION
+===================================================== */
+
+/*
+   The hero is the large first section
+   of the homepage.
+
+   We use Flexbox to put:
+
+   TEXT       IMAGE
+
+   next to each other.
+*/
+
+.hero {
+    min-height: 500px;
+
+    background-color: darkgreen;
+
+    padding: 60px 20px;
+
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 30px;
+
+    text-align: center;
+}
+
+
+/* =====================================================
+   7. HERO CONTENT
+===================================================== */
+
+.hero-content {
+    /*
+       flex: 1 allows the text area
+       to use available space.
+    */
+
+    flex: 1;
+
+    max-width: 800px;
+
+    margin: auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 20px;
+}
+
+
+/* Hero heading */
+
+.hero h2 {
+    font-size: 45px;
+
+    color: blueviolet;
+
+    margin-bottom: 20px;
+}
+
+
+/* Hero paragraph */
+
+.hero p {
+    font-size: 20px;
+
+    margin-bottom: 30px;
+}
+
+
+/* =====================================================
+   8. HERO IMAGE
+===================================================== */
+
+.hero-image {
+    /*
+       Allows the image container
+       to share available space.
+    */
+
+    flex: 1;
+
+    min-width: 280px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+
+/* Actual hero image */
+
+.hero-image img {
+    width: 100%;
+
+    max-width: 500px;
+
+    height: auto;
+
+    display: block;
+
+    border-radius: 8px;
+}
+
+
+/* =====================================================
+   9. HERO BUTTON
+===================================================== */
+
+.hero-button {
+    display: inline-flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background-color: lavender;
+
+    color: rebeccapurple;
+
+    padding: 12px 25px;
+
+    text-decoration: none;
+
+    border-radius: 50%;
+
+    transition: 0.3s;
+}
+
+
+/* Button hover */
+
+.hero-button:hover {
+    background-color: gray;
+}
+
+
+/* =====================================================
+   10. GENERAL SECTIONS
+===================================================== */
+
+.section {
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 70px 30px;
+}
+
+
+/* Section headings */
+
+.section h2 {
+    text-align: center;
+
+    color: dimgrey;
+
+    font-size: 32px;
+
+    margin-bottom: 30px;
+}
+
+
+/* =====================================================
+   11. ABOUT SECTION
+===================================================== */
+
+/*
+   Flexbox places:
+
+   TEXT       IMAGE
+*/
+
+.about-container {
+    display: flex;
+
+    flex-direction: row;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 40px;
+
+    flex-wrap: wrap;
+}
+
+
+/* About text */
+
+.about-text {
+    flex: 1;
+
+    min-width: 280px;
+}
+
+
+/* About image container */
+
+.about-image {
+    flex: 1;
+
+    min-width: 280px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+
+/* About image */
+
+.about-image img {
+    width: 100%;
+
+    max-width: 500px;
+
+    height: auto;
+
+    display: block;
+
+    border-radius: 8px;
+}
+
+
+/* =====================================================
+   CARDS CONTAINER
+===================================================== */
+
+/*
+   Flexbox allows the cards to be arranged
+   next to each other.
+*/
+
+.cards {
+    display: flex;
+
+    /* Put space between cards */
+    gap: 25px;
+
+    /* Allow cards to move to another row
+       when there is not enough space */
+    flex-wrap: wrap;
+}
+
+/* =====================================================
+   INDIVIDUAL CARD
+===================================================== */
+
+.card {
+
+    /* Background colour of the card */
+    background-color: moccasin;
+
+    /* Space inside the card */
+    padding: 30px;
+
+    /* Allows cards to share available space */
+    flex: 1;
+
+    /* Prevent the card from becoming too narrow */
+    min-width: 220px;
+
+    /* Rounded corners */
+    border-radius: 8px;
+
+    /* Small shadow around the card */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+
+    /* Makes hover effects smooth */
+    transition: 0.3s;
+}
+
+
+/* Card hover */
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+
+/* Card heading */
+
+.card h3 {
+    color: #0b3d2e;
+
+    margin-bottom: 15px;
+}
+
+
+/* Card paragraph */
+
+.card p {
+    font-size: 16px;
+
+    margin-bottom: 10px;
+}
+
+
+/* =====================================================
+   13. SCHOOL ACTIVITIES
+===================================================== */
+
+/*
+   We use Flexbox to put:
+
+   IMAGE       ACTIVITY LIST
+*/
+
+.activities-container {
+    display: flex;
+
+    flex-direction: row;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 40px;
+
+    flex-wrap: wrap;
+}
+
+
+/* Activity image container */
+
+.activity-image {
+    flex: 1;
+
+    min-width: 280px;
+
+    display: flex;
+
+    justify-content: center;
+}
+
+
+/* Activity image */
+
+.activity-image img {
+    width: 100%;
+
+    max-width: 500px;
+
+    height: auto;
+
+    border-radius: 8px;
+
+    display: block;
+}
+
+
+/* Activity list */
+
+.activity-list {
+    flex: 1;
+
+    min-width: 280px;
+}
+
+
+/* =====================================================
+   14. SCHOOL GALLERY
+===================================================== */
+
+/*
+   The gallery uses Flexbox to arrange
+   several images in rows.
+*/
+
+.gallery {
+    display: flex;
+
+    flex-direction: row;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 25px;
+}
+
+
+/* Individual gallery item */
+
+.gallery-item {
+    /*
+       Each item can grow and shrink.
+    */
+
+    flex: 1 1 220px;
+
+    min-width: 220px;
+
+    background-color: moccasin;
+
+    padding: 15px;
+
+    border-radius: 8px;
+
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+
+/* Gallery image */
+
+.gallery-item img {
+    width: 100%;
+
+    height: 200px;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+
+    display: block;
+
+    margin-bottom: 15px;
+}
+
+
+/* Gallery heading */
+
+.gallery-item h3 {
+    color: navy;
+}
+
+
+/* Gallery hover */
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+}
+
+
+/* =====================================================
+   15. CONTACT SECTION
+===================================================== */
+
+.contact {
+    text-align: center;
+}
+
+
+.contact p {
+    margin-bottom: 10px;
+}
+
+
+/* =====================================================
+   16. FOOTER
+===================================================== */
+
+.footer {
+    background-color: khaki;
+
+    color: navy;
+
+    padding: 30px 20px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    gap: 10px;
+}
+
+
+/* Footer links */
+
+.footer-links {
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+
+/* Footer <a> */
+
+.footer-links a {
+    color: navy;
+
+    text-decoration: none;
+}
+
+
+/* Footer hover */
+
+.footer-links a:hover {
+    color: indigo;
+}
+
+
+/* =====================================================
+   17. RESPONSIVE DESIGN
+===================================================== */
+
+/*
+   These styles apply when the screen
+   is 768px or smaller.
+
+   This is useful for tablets and phones.
+*/
+
+@media (max-width: 768px) {
+
+
+    /* -------------------------------
+       NAVIGATION
+    -------------------------------- */
+
+    .navbar {
+        flex-direction: column;
+
+        justify-content: center;
+
+        align-items: center;
+
+        padding: 20px;
+    }
+
+
+    .school-name h1 {
+        font-size: 32px;
+
+        text-align: center;
+    }
+
+
+    .nav-links {
+        flex-direction: column;
+
+        gap: 10px;
+
+        align-items: center;
+    }
+
+
+    /* -------------------------------
+       HERO
+    -------------------------------- */
+
+    /*
+       Change hero from:
+
+       TEXT | IMAGE
+
+       to:
+
+       TEXT
+       IMAGE
+    */
+
+    .hero {
+        flex-direction: column;
+
+        min-height: 450px;
+
+        padding: 50px 20px;
+    }
+
+
+    .hero h2 {
+        font-size: 35px;
+    }
+
+
+    .hero p {
+        font-size: 18px;
+    }
+
+
+    .hero-image {
+        width: 100%;
+    }
+
+
+    /* -------------------------------
+       ABOUT
+    -------------------------------- */
+
+    .about-container {
+        flex-direction: column;
+    }
+
+
+    .about-text,
+    .about-image {
+        width: 100%;
+    }
+
+
+    /* -------------------------------
+       ACADEMIC CARDS
+    -------------------------------- */
+
+    .cards {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+
+    .card {
+        width: 100%;
+    }
+
+
+    /* -------------------------------
+       ACTIVITIES
+    -------------------------------- */
+
+    .activities-container {
+        flex-direction: column;
+    }
+
+
+    .activity-image,
+    .activity-list {
+        width: 100%;
+    }
+
+
+    /* -------------------------------
+       GALLERY
+    -------------------------------- */
+
+    .gallery {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+
+    .gallery-item {
+        width: 100%;
+    }
+
+
+    /* -------------------------------
+       FOOTER
+    -------------------------------- */
+
+    .footer-links {
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+
+    /* -------------------------------
+       SECTIONS
+    -------------------------------- */
+
+    .section {
+        padding: 50px 20px;
+    }
+
+}
+
+
+/* =====================================================
+   18. VERY SMALL PHONES
+===================================================== */
+
+@media (max-width: 768px) {
+
+
+
+    .school-brand {
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+
+.school-logo {
+    width: 70px;
+
+    height: 70px;
+}
+
+
+.school-name h1 {
+    font-size: 28px;
+
+    text-align: center;
+}
+
+
+    .school-name h1 {
+        font-size: 26px;
+    }
+
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+
+    .hero p {
+        font-size: 16px;
+    }
+
+
+    .hero-button {
+        max-width: 250px;
+    }
+
+
+    .card {
+        padding: 20px;
+    }
+
+
+    .section h2 {
+        font-size: 28px;
+    }
+
+
+    .gallery-item img {
+        height: 180px;
+    }
+
+}
+
+
+/* =====================================================
+   SCHOOL LOGO AND SCHOOL NAME
+===================================================== */
+
+/*
+   .school-brand contains both:
+
+   1. School logo
+   2. School name
+
+   Flexbox puts them next to each other.
+*/
+
+.school-brand {
+    display: flex;
+
+    flex-direction: row;
+
+    align-items: center;
+
+    gap: 25px;
+}
+
+
+/*
+   Controls the size of the school logo.
+*/
+
+.school-logo {
+    width: 200px;
+
+    height: 200px;
+
+    object-fit: contain;
+
+    display: block;
+}
+
+
+/*
+   Controls the school name.
+*/
+
+.school-name {
+    display: flex;
+
+    align-items: center;
+}
+
+
+.school-name h1 {
+    margin-bottom: 40px;
+
+    color: navy;
+
+    font-size: 60px;
+}
+
+
+/* =====================================================
+   SCHOOL IMAGE
+===================================================== */
+
+/*
+   This controls the container
+   holding the school image.
+*/
+
+.school-image {
+    width: 100%;
+
+    max-width: 900px;
+
+    margin: auto;
+
+    text-align: center;
+}
+
+
+/*
+   This controls the actual image.
+*/
+
+.school-image img {
+    width: 100%;
+
+    max-height: 500px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+    display: block;
+
+    margin: auto;
+}
+
+
+/* =====================================================
+   TEACHER CARDS
+===================================================== */
+
+/*
+    This controls the container
+    holding all teacher cards.
+
+    Flexbox allows the teacher cards
+    to sit next to each other.
+*/
+
+.teacher-cards {
+    display: flex;
+
+    /* Creates space between cards */
+    gap: 25px;
+
+    /*
+        Allows the cards to move to
+        another row when necessary.
+    */
+    flex-wrap: wrap;
+}
+
+
+/*
+    This controls each individual
+    teacher card.
+*/
+
+.teacher-card {
+
+    /* Centers the information inside the card */
+    text-align: center;
+
+}
+
+
+/*
+    This controls the teacher photograph.
+*/
+
+.teacher-image {
+
+    /*
+        Sets the width of the teacher image.
+    */
+    width: 150px;
+
+
+    /*
+        Sets the height of the teacher image.
+    */
+    height: 150px;
+
+
+    /*
+        Makes the image circular.
+
+        50% creates a circle when
+        width and height are equal.
+    */
+    border-radius: 50%;
+
+
+    /*
+        Makes sure the image does not
+        stretch strangely.
+    */
+    object-fit: cover;
+
+
+    /*
+        Places the image in the center.
+    */
+    display: block;
+
+    margin: 0 auto 20px auto;
+
+}
+
+/* =====================================================
+   CONTACT FORM
+===================================================== */
+
+
+/*
+    This controls the whole form.
+
+    We don't make it too wide because
+    a very wide form can be difficult to read.
+*/
+
+#contactForm {
+
+    max-width: 700px;
+
+    margin: auto;
+
+}
+
+
+/*
+    Each form-group contains:
+
+    1. Label
+    2. Input or textarea
+
+    margin-bottom creates space between
+    different fields.
+*/
+
+.form-group {
+
+    margin-bottom: 20px;
+
+}
+
+
+/*
+    This controls the labels.
+
+    display: block makes the label
+    appear on its own line.
+*/
+
+.form-group label {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-weight: bold;
+
+}
+
+
+/*
+    This controls text boxes
+    and email input fields.
+*/
+
+.form-group input,
+.form-group textarea {
+
+    width: 100%;
+
+    padding: 12px;
+
+    font-size: 16px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 5px;
+
+    font-family: Arial, sans-serif;
+
+}
+
+
+/*
+    This allows the user to resize
+    the message box vertically.
+*/
+
+.form-group textarea {
+
+    resize: vertical;
+
+}
+
+
+/*
+    When the visitor clicks inside
+    an input field, the browser
+    focuses on that field.
+*/
+
+.form-group input:focus,
+.form-group textarea:focus {
+
+    outline: none;
+
+}
+
+
+/*
+    This controls the message that
+    JavaScript will display after
+    the form is submitted.
+*/
+
+#formMessage {
+
+    text-align: center;
+
+    margin-top: 20px;
+
+    font-weight: bold;
+
+}

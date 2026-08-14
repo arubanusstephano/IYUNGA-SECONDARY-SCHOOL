@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!--
+        This tells the browser that we are using
+        UTF-8 character encoding.
+    -->
+    <meta charset="UTF-8">
+
+
+    <!--
+        This makes the website responsive.
+        It allows the page to adjust to
+        different screen sizes such as phones,
+        tablets and computers.
+    -->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+
+    <!--
+        This is the title that appears
+        on the browser tab.
+    -->
+    <title>Academics - IYUNGA Secondary School</title>
+
+
+    <!--
+        Connect this page to our CSS file.
+
+        ../ means:
+        "Go back one folder."
+
+        Academics.html is inside the pages folder,
+        while style.css is outside the pages folder.
+    -->
+    <link rel="stylesheet" href="../style.css">
+
+
+    <!--
+        Add the school logo to the browser tab.
+    -->
+    <link rel="icon"
+          type="image/png"
+          href="../images/school-logo.png">
+
+</head>
+
+
+<body>
+
+
+    <!-- =================================================
+         NAVIGATION BAR
+    ================================================== -->
+
+    <nav class="navbar">
+
+
+        <!--
+            This container holds:
+            1. School logo
+            2. School name
+
+            We use Flexbox in CSS to place
+            these items next to each other.
+        -->
+
+        <div class="school-brand">
+
+
+            <!-- SCHOOL LOGO -->
+
+            <img
+                src="../images/school-logo.png"
+                alt="IYUNGA Secondary School Logo"
+                class="school-logo"
+            >
+
+
+            <!-- SCHOOL NAME -->
+
+            <div class="school-name">
+
+                <h1>IYUNGA SECONDARY SCHOOL</h1>
+
+            </div>
+
+        </div>
+
+
+
+        <!--
+            Navigation links allow visitors
+            to move between different pages.
+        -->
+
+        <div class="nav-links">
+
+            <!-- Link to homepage -->
+            <a href="../index.html">Home</a>
+
+            <!-- Link to About page -->
+            <a href="About.html">About</a>
+
+            <!-- Current page -->
+            <a href="Academics.html">Academics</a>
+
+            <!-- Link to Admission page -->
+            <a href="Admission.html">Admission</a>
+
+            <!-- Link to Teachers page -->
+            <a href="Teachers.html">Teachers</a>
+
+            <!-- Link to Contact page -->
+            <a href="Contact.html">Contact</a>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- =================================================
+         MAIN CONTENT
+    ================================================== -->
+
+    <main>
+
+
+        <!-- =================================================
+             ACADEMIC INTRODUCTION
+        ================================================== -->
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+
+                <!-- Main heading of the page -->
+
+                <h2>Academic Programs</h2>
+
+
+                <!-- Short introduction -->
+
+                <p>
+
+                    IYUNGA Secondary School is committed
+                    to providing quality education that
+                    helps students develop knowledge,
+                    skills, creativity and good character.
+
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             ACADEMIC PROGRAMS
+        ================================================== -->
+
+        <section class="section">
+
+
+            <!-- Section heading -->
+
+            <h2>Our Academic Programs</h2>
+
+
+            <!--
+                The cards container uses Flexbox.
+
+                Each card contains information
+                about one academic area.
+            -->
+
+            <div class="cards">
+
+
+                <!-- FIRST CARD -->
+
+                <div class="card">
+
+                    <h3>Science Subjects</h3>
+
+                    <p>
+
+                        Students learn science subjects
+                        that help them understand the
+                        natural world and develop
+                        problem-solving skills.
+
+                    </p>
+
+                </div>
+
+
+
+                <!-- SECOND CARD -->
+
+                <div class="card">
+
+                    <h3>Humanities</h3>
+
+                    <p>
+
+                        Humanities subjects help students
+                        understand society, history,
+                        citizenship and human relationships.
+
+                    </p>
+
+                </div>
+
+
+
+                <!-- THIRD CARD -->
+
+                <div class="card">
+
+                    <h3>Languages</h3>
+
+                    <p>
+
+                        Language studies help students
+                        develop communication, reading,
+                        writing and speaking skills.
+
+                    </p>
+
+                </div>
+
+
+
+                <!-- FOURTH CARD -->
+
+                <div class="card">
+
+                    <h3>Computer Studies</h3>
+
+                    <p>
+
+                        Students are introduced to
+                        computer knowledge and digital
+                        skills that are useful in
+                        modern society.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             SCHOOL SUBJECTS
+        ================================================== -->
+
+        <section class="section">
+
+
+            <h2>Subjects Offered</h2>
+
+
+            <p>
+
+                The school provides different subjects
+                to support students in developing
+                academic knowledge and practical skills.
+
+            </p>
+
+
+            <!--
+                An unordered list is used to display
+                subjects using bullet points.
+            -->
+
+            <ul>
+
+                <li>Mathematics</li>
+
+                <li>Physics</li>
+
+                <li>Chemistry</li>
+
+                <li>Biology</li>
+
+                <li>English</li>
+
+                <li>Kiswahili</li>
+
+                <li>History</li>
+
+                <li>Civics</li>
+
+                <li>Bible Knowledge</li>
+
+                <li>Computer Studies</li>
+
+            </ul>
+
+        </section>
+
+
+
+        <!-- =================================================
+             SCIENCE SUBJECTS
+        ================================================== -->
+
+        <section class="section">
+
+
+            <h2>Science and Technology</h2>
+
+
+            <div class="cards">
+
+
+                <!-- Physics -->
+
+                <div class="card">
+
+                    <h3>Physics</h3>
+
+                    <p>
+
+                        Physics helps students understand
+                        matter, energy, forces, motion and
+                        other physical phenomena.
+
+                    </p>
+
+                </div>
+
+
+
+                <!-- Chemistry -->
+
+                <div class="card">
+
+                    <h3>Chemistry</h3>
+
+                    <p>
+
+                        Chemistry helps students understand
+                        substances, their properties and
+                        how they interact with each other.
+
+                    </p>
+
+                </div>
+
+
+
+                <!-- Biology -->
+
+                <div class="card">
+
+                    <h3>Biology</h3>
+
+                    <p>
+
+                        Biology introduces students to
+                        living organisms, their structures,
+                        functions and environments.
+
+                    </p>
+
+                </div>
+
+
+
+                <!-- Computer Studies -->
+
+                <div class="card">
+
+                    <h3>Computer Studies</h3>
+
+                    <p>
+
+                        Computer studies introduce students
+                        to computers, digital technology,
+                        programming and information systems.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             HUMANITIES AND LANGUAGES
+        ================================================== -->
+
+        <section class="section">
+
+
+            <h2>Humanities and Languages</h2>
+
+
+            <div class="cards">
+
+
+                <!-- Mathematics -->
+
+                <div class="card">
+
+                    <h3>Mathematics</h3>
+
+                    <p>
+
+                        Mathematics develops logical thinking,
+                        calculation skills and problem-solving
+                        abilities.
+
+                    </p>
+
+                </div>
+
+
+
+                <!-- History -->
+
+                <div class="card">
+
+                    <h3>History</h3>
+
+                    <p>
+
+                        History helps students understand
+                        important events, people and
+                        developments from the past.
+
+                    </p>
+
+                </div>
+
+
+
+                <!-- Civics -->
+
+                <div class="card">
+
+                    <h3>Civics</h3>
+
+                    <p>
+
+                        Civics helps students understand
+                        citizenship, responsibilities,
+                        rights and participation in society.
+
+                    </p>
+
+                </div>
+
+
+
+                <!-- English -->
+
+                <div class="card">
+
+                    <h3>English</h3>
+
+                    <p>
+
+                        English helps students develop
+                        communication, reading, writing
+                        and speaking skills.
+
+                    </p>
+
+                </div>
+
+
+
+                <!-- Kiswahili -->
+
+                <div class="card">
+
+                    <h3>Kiswahili</h3>
+
+                    <p>
+
+                        Kiswahili develops communication
+                        skills and helps students appreciate
+                        the language and culture of Tanzania.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             EXAMINATIONS
+        ================================================== -->
+
+        <section class="section">
+
+
+            <h2>Examinations and Assessment</h2>
+
+
+            <p>
+
+                Students participate in different forms
+                of assessment to measure their understanding
+                and academic progress.
+
+            </p>
+
+
+            <div class="cards">
+
+
+                <!-- Internal examinations -->
+
+                <div class="card">
+
+                    <h3>Internal Examinations</h3>
+
+                    <p>
+
+                        Internal examinations help teachers
+                        evaluate students' progress during
+                        the academic year.
+
+                    </p>
+
+                </div>
+
+
+
+                <!-- Continuous assessment -->
+
+                <div class="card">
+
+                    <h3>Continuous Assessment</h3>
+
+                    <p>
+
+                        Students are assessed through
+                        classroom activities, assignments,
+                        tests and other learning activities.
+
+                    </p>
+
+                </div>
+
+
+
+                <!-- External examinations -->
+
+                <div class="card">
+
+                    <h3>External Examinations</h3>
+
+                    <p>
+
+                        Students participate in relevant
+                        external examinations according
+                        to the education requirements.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             ACADEMIC ACTIVITIES
+        ================================================== -->
+
+        <section class="section">
+
+
+            <h2>Academic Activities</h2>
+
+
+            <p>
+
+                Academic learning is supported by
+                activities that encourage students
+                to apply their knowledge and skills.
+
+            </p>
+
+
+            <!-- List of academic activities -->
+
+            <ul>
+
+                <li>Classroom discussions</li>
+
+                <li>Academic competitions</li>
+
+                <li>Science activities</li>
+
+                <li>Computer activities</li>
+
+                <li>Group discussions</li>
+
+                <li>Educational projects</li>
+
+                <li>Academic tests and examinations</li>
+
+            </ul>
+
+        </section>
+
+
+
+        <!-- =================================================
+             ACADEMIC GOALS
+        ================================================== -->
+
+        <section class="section">
+
+
+            <h2>Our Academic Goals</h2>
+
+
+            <div class="cards">
+
+
+                <!-- Goal 1 -->
+
+                <div class="card">
+
+                    <h3>Improve Performance</h3>
+
+                    <p>
+
+                        We aim to support students in
+                        improving their academic performance.
+
+                    </p>
+
+                </div>
+
+
+
+                <!-- Goal 2 -->
+
+                <div class="card">
+
+                    <h3>Develop Skills</h3>
+
+                    <p>
+
+                        We encourage students to develop
+                        knowledge, creativity and practical
+                        skills.
+
+                    </p>
+
+                </div>
+
+
+
+                <!-- Goal 3 -->
+
+                <div class="card">
+
+                    <h3>Prepare for the Future</h3>
+
+                    <p>
+
+                        We prepare students with knowledge
+                        and skills that can help them
+                        continue their education and
+                        contribute to society.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =================================================
+         FOOTER
+    ================================================== -->
+
+    <footer>
+
+        <p>
+
+            &copy; 2026 IYUNGA SECONDARY SCHOOL.
+            All Rights Reserved.
+
+        </p>
+
+    </footer>
+
+
+
+    <!--
+        Connect this page to our JavaScript file.
+
+        Because this page is inside the "pages" folder,
+        we use ../ to go back to the main project folder.
+    -->
+
+    <script src="../script.js"></script>
+
+
+</body>
+
+</html>
