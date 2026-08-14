@@ -4,8 +4,8 @@
 <head>
 
     <!--
-        This tells the browser that the page
-        uses UTF-8 character encoding.
+        This tells the browser which character
+        encoding the website is using.
     -->
     <meta charset="UTF-8">
 
@@ -13,8 +13,8 @@
     <!--
         This makes the website responsive.
 
-        It allows the page to adjust properly
-        on computers, tablets and mobile phones.
+        It allows the page to work properly
+        on computers, tablets and phones.
     -->
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
@@ -31,10 +31,10 @@
         Connect this page to our main CSS file.
 
         ../ means:
-        "Go back one folder."
+        Go back one folder.
 
-        Admission.html is inside the pages folder,
-        while style.css is in the main project folder.
+        Admission.html is inside "pages",
+        while style.css is outside the pages folder.
     -->
     <link rel="stylesheet" href="../style.css">
 
@@ -53,21 +53,16 @@
 <body>
 
 
-    <!-- =================================================
+    <!-- =====================================================
          NAVIGATION BAR
-    ================================================== -->
+    ====================================================== -->
 
     <nav class="navbar">
 
 
         <!--
-            This container contains:
-
-            1. School logo
-            2. School name
-
-            CSS Flexbox will arrange them
-            next to each other.
+            This contains the school logo
+            and school name.
         -->
 
         <div class="school-brand">
@@ -95,28 +90,28 @@
 
 
         <!--
-            Navigation links allow visitors
-            to move from one page to another.
+            These links allow visitors to
+            move between different pages.
         -->
 
         <div class="nav-links">
 
-            <!-- Link to Home page -->
+            <!-- Home page -->
             <a href="../index.html">Home</a>
 
-            <!-- Link to About page -->
+            <!-- About page -->
             <a href="About.html">About</a>
 
-            <!-- Link to Academics page -->
+            <!-- Academics page -->
             <a href="Academics.html">Academics</a>
 
-            <!-- Current Admission page -->
+            <!-- Current page -->
             <a href="Admission.html">Admission</a>
 
-            <!-- Link to Teachers page -->
+            <!-- Teachers page -->
             <a href="Teachers.html">Teachers</a>
 
-            <!-- Link to Contact page -->
+            <!-- Contact page -->
             <a href="Contact.html">Contact</a>
 
         </div>
@@ -125,40 +120,38 @@
 
 
 
-    <!-- =================================================
+    <!-- =====================================================
          MAIN CONTENT
-    ================================================== -->
+    ====================================================== -->
 
     <main>
 
 
-        <!-- =================================================
+        <!-- =====================================================
              ADMISSION INTRODUCTION
-        ================================================== -->
+        ====================================================== -->
 
         <section class="hero">
-
 
             <div class="hero-content">
 
 
-                <!--
-                    Main heading of the Admission page.
-                -->
+                <!-- Main heading -->
 
                 <h2>Admission to IYUNGA Secondary School</h2>
 
 
                 <!--
-                    Short introduction to visitors.
+                    Short introduction to
+                    parents and students.
                 -->
 
                 <p>
 
                     Welcome to the IYUNGA Secondary School
-                    admission section. We provide information
-                    to help students and parents understand
-                    the admission process.
+                    admission section. Here you can find
+                    information about the admission process,
+                    requirements and important documents.
 
                 </p>
 
@@ -168,40 +161,43 @@
 
 
 
-        <!-- =================================================
-             WHO CAN APPLY
-        ================================================== -->
+        <!-- =====================================================
+             WHO CAN APPLY?
+        ====================================================== -->
 
         <section class="section">
-
 
             <h2>Who Can Apply?</h2>
 
 
             <p>
 
-                Students who meet the school's admission
-                requirements may apply for admission to
-                IYUNGA Secondary School.
+                Students who meet the required admission
+                conditions can apply to join IYUNGA
+                Secondary School.
 
             </p>
 
 
             <!--
-                We use a list to display
-                the different categories.
+                An unordered list creates
+                bullet points.
             -->
 
             <ul>
 
                 <li>
-                    Students joining the appropriate
-                    secondary school level.
+                    Students joining secondary education.
                 </li>
 
                 <li>
-                    Students transferring from
-                    another school where applicable.
+                    Students joining the appropriate
+                    school level.
+                </li>
+
+                <li>
+                    Students transferring from another
+                    school where applicable.
                 </li>
 
                 <li>
@@ -215,28 +211,26 @@
 
 
 
-        <!-- =================================================
+        <!-- =====================================================
              ADMISSION REQUIREMENTS
-        ================================================== -->
+        ====================================================== -->
 
         <section class="section">
-
 
             <h2>Admission Requirements</h2>
 
 
             <p>
 
-                Applicants should provide the necessary
-                information and documents required by
-                the school during the admission process.
+                Applicants should prepare the information
+                and documents required by the school.
 
             </p>
 
 
             <!--
-                Cards are used to make the information
-                easier to read.
+                Cards help us organize information
+                into separate sections.
             -->
 
             <div class="cards">
@@ -250,9 +244,9 @@
 
                     <p>
 
-                        Applicants may be required to
-                        provide relevant academic records
-                        or examination results.
+                        Provide the relevant academic
+                        records or examination results
+                        required by the school.
 
                     </p>
 
@@ -268,9 +262,8 @@
 
                     <p>
 
-                        Correct personal information
-                        should be provided during the
-                        admission process.
+                        Provide correct personal
+                        information about the student.
 
                     </p>
 
@@ -282,12 +275,13 @@
 
                 <div class="card">
 
-                    <h3>Parent or Guardian Information</h3>
+                    <h3>Parent or Guardian</h3>
 
                     <p>
 
-                        Information about the student's
-                        parent or guardian may be required.
+                        Provide the required information
+                        about the student's parent
+                        or guardian.
 
                     </p>
 
@@ -299,33 +293,26 @@
 
 
 
-        <!-- =================================================
+        <!-- =====================================================
              REQUIRED DOCUMENTS
-        ================================================== -->
+        ====================================================== -->
 
         <section class="section">
-
 
             <h2>Required Documents</h2>
 
 
             <p>
 
-                The following are examples of documents
-                that may be required during admission.
-                The school should update this list
-                according to its official requirements.
+                Applicants should prepare the documents
+                required during the admission process.
 
             </p>
 
 
-            <!--
-                Unordered list creates bullet points.
-            -->
-
             <ul>
 
-                <li>Student academic records</li>
+                <li>Academic records</li>
 
                 <li>Relevant examination results</li>
 
@@ -343,29 +330,60 @@
 
 
 
-        <!-- =================================================
-             ADMISSION PROCEDURE
-        ================================================== -->
+        <!-- =====================================================
+             HOW TO APPLY
+        ====================================================== -->
 
-        <section class="section">
-
-
-            <h2>Admission Procedure</h2>
+        <section class="section admission-process">
 
 
-            <div class="cards">
+            <h2>How to Apply for Admission</h2>
 
 
-                <!-- STEP 1 -->
+            <p>
 
-                <div class="card">
+                Follow these simple steps to understand
+                the admission process at IYUNGA Secondary School.
 
-                    <h3>Step 1: Get Information</h3>
+            </p>
+
+
+
+            <!--
+                This container holds all the admission steps.
+
+                Flexbox will arrange the steps neatly
+                using CSS.
+            -->
+
+            <div class="admission-steps">
+
+
+                <!-- =================================================
+                     STEP 1
+                ================================================== -->
+
+                <div class="admission-step">
+
+
+                    <!--
+                        The number shows the order
+                        of the admission process.
+                    -->
+
+                    <div class="step-number">
+                        1
+                    </div>
+
+
+                    <h3>Check Information</h3>
+
 
                     <p>
 
-                        Obtain the latest admission
-                        information from the school.
+                        First, check the admission
+                        requirements and available
+                        school information.
 
                     </p>
 
@@ -373,16 +391,25 @@
 
 
 
-                <!-- STEP 2 -->
+                <!-- =================================================
+                     STEP 2
+                ================================================== -->
 
-                <div class="card">
+                <div class="admission-step">
 
-                    <h3>Step 2: Prepare Documents</h3>
+
+                    <div class="step-number">
+                        2
+                    </div>
+
+
+                    <h3>Prepare Documents</h3>
+
 
                     <p>
 
-                        Prepare all documents and
-                        information required for admission.
+                        Prepare all documents required
+                        for the admission process.
 
                     </p>
 
@@ -390,17 +417,26 @@
 
 
 
-                <!-- STEP 3 -->
+                <!-- =================================================
+                     STEP 3
+                ================================================== -->
 
-                <div class="card">
+                <div class="admission-step">
 
-                    <h3>Step 3: Submit Application</h3>
+
+                    <div class="step-number">
+                        3
+                    </div>
+
+
+                    <h3>Submit Application</h3>
+
 
                     <p>
 
-                        Submit the admission application
-                        according to the school's
-                        instructions.
+                        Complete and submit the admission
+                        application according to the
+                        school's instructions.
 
                     </p>
 
@@ -408,21 +444,31 @@
 
 
 
-                <!-- STEP 4 -->
+                <!-- =================================================
+                     STEP 4
+                ================================================== -->
 
-                <div class="card">
+                <div class="admission-step">
 
-                    <h3>Step 4: Admission Decision</h3>
+
+                    <div class="step-number">
+                        4
+                    </div>
+
+
+                    <h3>Admission Confirmation</h3>
+
 
                     <p>
 
-                        The school reviews the application
-                        and provides further information
-                        about the admission process.
+                        Follow the school's instructions
+                        after the application has been
+                        reviewed.
 
                     </p>
 
                 </div>
+
 
             </div>
 
@@ -430,31 +476,71 @@
 
 
 
-        <!-- =================================================
-             IMPORTANT INFORMATION
-        ================================================== -->
+        <!-- =====================================================
+             DOWNLOAD JOINING INSTRUCTIONS
+        ====================================================== -->
 
         <section class="section">
 
+            <h2>Joining Instructions</h2>
+
+
+            <p>
+
+                Students who have been selected to join
+                the school can download the joining
+                instructions below.
+
+            </p>
+
+
+            <!--
+                This link allows the user to download
+                the joining instructions PDF.
+
+                ../ means go back from the pages folder.
+
+                Then enter the documents folder.
+            -->
+
+            <a
+                href="../documents/joining-instructions.pdf"
+                class="hero-button"
+                download
+            >
+
+                Download Joining Instructions
+
+            </a>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             IMPORTANT ADMISSION INFORMATION
+        ====================================================== -->
+
+        <section class="section">
 
             <h2>Important Information</h2>
 
 
             <p>
 
-                Admission requirements and procedures may
-                change depending on the school year and
-                applicable education regulations.
+                Admission requirements and procedures
+                may change depending on the school year
+                and applicable education requirements.
 
             </p>
 
 
             <p>
 
-                Students and parents are encouraged to
-                confirm the latest admission information
-                directly from the school before submitting
-                an application.
+                Parents and students are encouraged to
+                confirm the latest information directly
+                from the school before completing an
+                application.
 
             </p>
 
@@ -462,21 +548,19 @@
 
 
 
-        <!-- =================================================
-             ADMISSION CALL TO ACTION
-        ================================================== -->
+        <!-- =====================================================
+             NEED HELP?
+        ====================================================== -->
 
         <section class="section">
 
-
-            <h2>Need More Information?</h2>
+            <h2>Need Help With Admission?</h2>
 
 
             <p>
 
                 If you need more information about
-                admission, please contact IYUNGA
-                Secondary School.
+                admission, contact IYUNGA Secondary School.
 
             </p>
 
@@ -484,15 +568,14 @@
             <!--
                 This button takes the visitor
                 to the Contact page.
-
-                The class "hero-button" allows us
-                to reuse the button style from CSS.
             -->
 
-            <a class="hero-button"
-               href="Contact.html">
+            <a
+                href="Contact.html"
+                class="hero-button"
+            >
 
-                Contact Us
+                Contact the School
 
             </a>
 
@@ -503,12 +586,11 @@
 
 
 
-    <!-- =================================================
+    <!-- =====================================================
          FOOTER
-    ================================================== -->
+    ====================================================== -->
 
     <footer>
-
 
         <p>
 
@@ -517,7 +599,6 @@
 
         </p>
 
-
     </footer>
 
 
@@ -525,13 +606,8 @@
     <!--
         Connect this page to JavaScript.
 
-        Because Admission.html is inside
-        the pages folder, we use ../
-
-        ../script.js means:
-
-        Go back to the main project folder
-        and find script.js.
+        ../ means go back from the pages folder
+        to the main project folder.
     -->
 
     <script src="../script.js"></script>

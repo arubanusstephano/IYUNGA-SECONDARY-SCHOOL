@@ -1213,3 +1213,251 @@ body {
     font-weight: bold;
 
 }
+
+/* =====================================================
+   NECTA RESULTS TABLE
+===================================================== */
+
+
+/*
+    This controls the table.
+
+    width: 100% means the table uses
+    the available width.
+*/
+
+.results-table {
+
+    width: 100%;
+
+    /*
+        Allows the table to scroll
+        horizontally on small screens.
+    */
+
+    overflow-x: auto;
+
+}
+
+
+/*
+    This controls the actual table.
+*/
+
+.results-table table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin-top: 20px;
+
+}
+
+
+/*
+    This controls both table headings
+    and table cells.
+*/
+
+.results-table th,
+.results-table td {
+
+    border: 1px solid #ccc;
+
+    padding: 12px;
+
+    text-align: center;
+
+}
+
+
+/*
+    This controls the table headings.
+*/
+
+.results-table th {
+
+    background-color: khaki;
+
+    color: navy;
+
+}
+
+
+/*
+    This creates a small visual effect
+    when the mouse moves over a result row.
+*/
+
+.results-table tr:hover {
+
+    background-color: #f5f5f5;
+
+}
+/* =====================================================
+   ADMISSION STEPS
+===================================================== */
+
+
+/*
+    This is the container for all
+    admission steps.
+
+    Flexbox arranges the steps
+    next to each other.
+*/
+
+.admission-steps {
+
+    display: flex;
+
+    gap: 25px;
+
+    /*
+        Allows steps to move to another
+        row when the screen becomes smaller.
+    */
+
+    flex-wrap: wrap;
+
+    margin-top: 30px;
+
+}
+
+
+/*
+    Each admission step becomes
+    its own card.
+*/
+
+.admission-step {
+
+    /*
+        flex: 1 means each step can
+        share the available space.
+    */
+
+    flex: 1;
+
+    min-width: 200px;
+
+    padding: 25px;
+
+    background-color: moccasin;
+
+    border-radius: 8px;
+
+    text-align: center;
+
+    /*
+        Adds a small shadow around
+        each step.
+    */
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+
+    /*
+        Makes the hover effect smooth.
+    */
+
+    transition: 0.3s;
+
+}
+
+
+/*
+    Move the card slightly upward
+    when the mouse is placed over it.
+*/
+
+.admission-step:hover {
+
+    transform: translateY(-5px);
+
+}
+
+
+/*
+    This is the circle containing
+    the step number.
+*/
+
+.step-number {
+
+    width: 50px;
+
+    height: 50px;
+
+    /*
+        Makes the number container circular.
+    */
+
+    border-radius: 50%;
+
+    background-color: navy;
+
+    color: white;
+
+    /*
+        Flexbox centers the number
+        horizontally and vertically.
+    */
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    /*
+        Places the circle in the center.
+    */
+
+    margin: 0 auto 15px auto;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+}
+
+.cards{
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card{
+    flex: 1;
+    min-width: 250px;
+
+    background-color: moccasin;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.results-table{
+    overflow-x: auto;
+}
+
+.results-table table{
+    width:100%;
+    border-collapse: collapse;
+}
+
+.results-table th,
+.results-table td{
+    border:1px solid #ccc;
+    padding:12px;
+    text-align:center;
+}
+
+.results-table th{
+    background-color: khaki;
+    color: navy;
+}
